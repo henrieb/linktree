@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--texto);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --texto: 'Rogan', sans-serif;
+    --titulo: 'Edit Undo BRK', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: var(--texto);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.header img {
+    border-radius: 50%;
+    border: 5px solid #ffde56;
+    width: 130px;
+    height: auto;
+}
+
+.header p {
+    text-align: center;
+    line-height: 140%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+section p {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+section nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+section nav a {
+    background-color: #ffde56;
+    color: #000;
+    font-family: var(--titulo);
+    font-size: 1.5em;
+    width: 200px;
+    text-align: center;
+    padding: 0.6rem;
+    border: 3px solid #ffde56;
+    transition: .2s ease;
+    border-radius: 50px;
+}
+
+section nav a:hover {
+    background-color: #000;
+    color: #ffde56;
+}
+section span {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
