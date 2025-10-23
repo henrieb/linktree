@@ -85,8 +85,12 @@ section nav a {
     border: 3px solid #ffde56;
     transition: .2s ease;
     border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
 }
-
+section nav a i {
+    font-size: 0.9em;
+}
 section nav a:hover {
     background-color: #000;
     color: #ffde56;
